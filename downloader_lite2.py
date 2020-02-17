@@ -196,6 +196,8 @@ def get_real_url( m3u8_url):
             if ts_url!='':
                 print('真实地址为'+ts_url)
                 return ts_url
+            else:
+                return  m3u8_url
     else:
         print(r.status_code)
 
